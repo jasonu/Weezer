@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #CCC;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav ul {
+    margin-top: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    font-family: "Raleway";
+     font-weight: normal;
+    color: white;
+}
+
+.band-name-lg {
+    font-size: 5em;
+}
+
+.main-header {
+    /* background-color: rgba(0,0,0,0.2); */
+    background-image: url("images/universe_640.jpg");
+    /* background-blend-mode: multiply; */
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Raleway";
+    font-weight: normal;
+    color: #CCC;
+    text-align: -webkit-center;
+    /* See stack overflow for the above text-align value:
+       https://stackoverflow.com/questions/35679627/text-aligncenter-works-in-chrome-doesnt-work-in-safari
+    */
+    font-size: 2.5em;
+}
+
+.about-band-img {
+    float: left;
+    height: 200px;
+    margin: 15px;
+    border-radius: 5%;
+}
+
+
+.main-footer {
+    background-color: #111;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 0.5em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    display: block;
+    margin: 0 auto;
+    /* margin: 0em 15% 2em 15%; */
+    color: white;
+    border: 2px solid #369;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+    align: center;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-play {
+    margin: 0.5em auto;
+    color: #369;
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.tour-row {
+    border-bottom: 1px solid grey;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: 0.5em;
+}
+
+.tour-date {
+    color: #CCC;
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #369;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #69D;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.shop-item-img {
+    height: 250px;
+    background-color: #999;
+    border-radius: 0.5em;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #CCC;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #DDD;
+}
+
+.cart-col {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.cart-qty {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #999;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+}
+
+.cart-item-img {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-qty-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #336699;
+    background-color: #EEE;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid #CCC;
+}
+
+.cart-row:last-child .cart-col {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #CCC;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #CCC;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.5em;
+}
